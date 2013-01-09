@@ -97,7 +97,7 @@ class ModifierCompletions(sublime_plugin.EventListener):
             ("exclude_blogs\tMT modifier", "exclude_blogs=\"$1\""),
 
             # date format
-            #("format=\"%Y.%m.%d(%a) %H:%M:%S\"\tMT modifier", "format=\"${1:%Y.%m.%d(%a) %H:%M:%S}\""),
+            ("format=\"%Y.%m.%d(%a) %H:%M:%S\"\tMT modifier", "format=\"${1:%Y.%m.%d(%a) %H:%M:%S}\""),
 
             # if
             ("name\tMT modifier", "name=\"$1\""),
@@ -109,10 +109,10 @@ class ModifierCompletions(sublime_plugin.EventListener):
             ("le\tMT modifier", "le=\"$1\""),
             ("ge\tMT modifier", "ge=\"$1\""),
             ("tag\tMT modifier", "tag=\"$1\""),
-            #("op\tMT modifier", "op=\"${1:+|-|*|/|%|++|--}\""),
+            ("op\tMT modifier", "op=\"${1:+|-|*|/|%|++|--}\""),
             ("index\tMT modifier", "index=\"$1\""),
             ("key\tMT modifier", "key=\"$1\""),
-            #("function\tMT modifier", "function=\"${1:pop|shift|count()}\""),
+            ("function\tMT modifier", "function=\"${1:pop|shift|count()}\""),
             ("value\tMT modifier", "value=\"$1\"")
         ], sublime.INHIBIT_WORD_COMPLETIONS | sublime.INHIBIT_EXPLICIT_COMPLETIONS)
 
